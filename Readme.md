@@ -1,3 +1,3 @@
 # Личный проект "Пинк"
-* Студент: [nobao] (https://nobao.ru).
-* Наставник: [HTML Academy].
+* Студент: nobao (https://nobao.ru).
+* Наставник: HTML Academy.
