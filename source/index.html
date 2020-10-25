@@ -10,7 +10,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="img/logotype-mobile" width="75" height="22" alt="Социальная сеть «Pink»">
+        <img class="page-header__logo-image" src="img/logotype-mobile.jpg" width="75" height="22" alt="Социальная сеть «Pink»">
       </a>
 
       <nav class="main-nav">
@@ -26,7 +26,7 @@
             <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -45,13 +45,13 @@
       <a class="intro__download-link button" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
 
       <ul class="intro__list">
-        <li class="intro__item">
+        <li class="intro__item intro__item--ios">
           <a href="https://www.apple.com/ru/ios/app-store/">Pink на iOS</a>
         </li>
-        <li class="intro__item">
+        <li class="intro__item intro__item--android">
           <a href="https://play.google.com/store/apps?hl=ru">Pink на Android</a>
         </li>
-        <li class="intro__item">
+        <li class="intro__item intro__item--windows-phone">
           <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Pink на Windows Phone</a>
         </li>
       </ul>
@@ -92,18 +92,6 @@
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="reviews__item slider__item">
-            <blockquote class="reviews__block">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
-            </blockquote>
-          </li>
-          <li class="reviews__item slider__item">
-            <blockquote class="reviews__block">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
-            </blockquote>
-          </li>
         </ul>
 
         <p class="reviews__toggles slider__toggles">
@@ -116,71 +104,76 @@
     </section>
 
     <section class="price">
-      <h2 class="visually-hidden">Тарифные планы</h2>
-      <table class="price__list slider">
-        <tr>
-          <th class="price__tariff" colspan="2">
-            <span class="price__title">База</span><br>
-            1,99 USD
-          </th>
-          <th class="price__tariff" colspan="2">
-            <span class="price__title">Стандарт</span><br>
-            3,99 USD
-          </th>
-          <th class="price__tariff" colspan="2">
-            <span class="price__title">Анлим</span><br>
-            9,99 USD
-          </th>
-        </tr>
-        <tr>
-          <td class="price__feature">Розовый фильтр</td>
-          <td class="price__ability price__ability--on">
-            <span class="visually-hidden">Да</span>
-          </td>
-          <td class="price__feature">Розовый фильтр</td>
-          <td class="price__ability price__ability--on">
-            <span class="visually-hidden">Да</span>
-          </td>
-          <td class="price__feature">Розовый фильтр</td>
-          <td class="price__ability price__ability--on">
-            <span class="visually-hidden">Да</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="price__feature">Смайлики</td>
-          <td class="price__ability price__ability--off">
-            <span class="visually-hidden">Нет</span>
-          </td>
-          <td class="price__feature">Смайлики</td>
-          <td class="price__ability price__ability--on">
-            <span class="visually-hidden">Да</span>
-          </td>
-          <td class="price__feature">Смайлики</td>
-          <td class="price__ability price__ability--on">
-            <span class="visually-hidden">Да</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="price__feature">Комментарии</td>
-          <td class="price__ability price__ability--off">
-            <span class="visually-hidden">Нет</span>
-          </td>
-          <td class="price__feature">Комментарии</td>
-          <td class="price__ability price__ability--off">
-            <span class="visually-hidden">Нет</span>
-          </td>
-          <td class="price__feature">Комментарии</td>
-          <td class="price__ability price__ability--on">
-            <span class="visually-hidden">Да</span>
-          </td>
-        </tr>
-      </table>
+      <div class="price__wrapper slider">
 
-      <p class="price__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
+        <h2 class="visually-hidden">Тарифные планы</h2>
+
+        <table class="price__list slider">
+          <tr>
+            <th class="price__tariff" colspan="2">
+              <span class="price__title">База</span><br>
+              1,99 USD
+            </th>
+            <th class="price__tariff" colspan="2">
+              <span class="price__title">Стандарт</span><br>
+              3,99 USD
+            </th>
+            <th class="price__tariff" colspan="2">
+              <span class="price__title">Анлим</span><br>
+              9,99 USD
+            </th>
+          </tr>
+          <tr>
+            <td class="price__feature">Розовый фильтр</td>
+            <td class="price__ability price__ability--on">
+              <span class="visually-hidden">Да</span>
+            </td>
+            <td class="price__feature">Розовый фильтр</td>
+            <td class="price__ability price__ability--on">
+              <span class="visually-hidden">Да</span>
+            </td>
+            <td class="price__feature">Розовый фильтр</td>
+            <td class="price__ability price__ability--on">
+              <span class="visually-hidden">Да</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__feature">Смайлики</td>
+            <td class="price__ability price__ability--off">
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="price__feature">Смайлики</td>
+            <td class="price__ability price__ability--on">
+              <span class="visually-hidden">Да</span>
+            </td>
+            <td class="price__feature">Смайлики</td>
+            <td class="price__ability price__ability--on">
+              <span class="visually-hidden">Да</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__feature">Комментарии</td>
+            <td class="price__ability price__ability--off">
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="price__feature">Комментарии</td>
+            <td class="price__ability price__ability--off">
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="price__feature">Комментарии</td>
+            <td class="price__ability price__ability--on">
+              <span class="visually-hidden">Да</span>
+            </td>
+          </tr>
+        </table>
+
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+
     </section>
 
     <section class="contacts">
@@ -191,11 +184,11 @@
       <p class="contacts__text">Звоните:</p>
       <a class="contacts__data"  href="tel:+78125556666">+7 (812) 555-66-66</a>
 
-      <p class="contacts__text">Приезжайте в гости:</p>
-      <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
-
       <p class="contacts__text">Пишите:</p>
       <a class="contacts__data"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+
+      <p class="contacts__text">Приезжайте в гости:</p>
+      <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
 
       <p class="contacts__map map">
         <img class="map__image" src="img/map.jpg" height="200" width="320" alt="Схема проезда в офис по адресу улица Большая Конюшенная, 19/8">
